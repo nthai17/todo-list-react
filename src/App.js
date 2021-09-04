@@ -101,9 +101,8 @@ class App extends Component {
         if (value.length <= 0) {
             this.setState({isSearch:false})
         } else {
-            value.toLowerCase();
             for (let item of itemsSearch) {
-                if (item.name.toLowerCase().indexOf(value) > -1 ){
+                if (item.name.toLowerCase().indexOf(value.toLowerCase()) > -1 ){
                     newItems.push(item)
                 }
             }
