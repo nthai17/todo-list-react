@@ -4,7 +4,7 @@ class Sort extends Component {
         let {sortType, sortOder} = this.props;
         if (sortOder !== '' && sortType !== '') {
             return(
-                <span className="label label-success label-medium text-uppercase">
+                <span className="label label-success label-medium text-uppercase hide-on-mobile">
                     {sortType} - {sortOder}
                 </span>
             )
@@ -13,10 +13,10 @@ class Sort extends Component {
     render(){
         return(
             <div className="dropdown isFlexbox">
-                <button className="btn btn-default dropdown-toggle mr-7" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                <button className="btn btn-default dropdown-toggle mr-7 m-ml--8" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                     Sort by <span className="caret" />
                 </button>
-                <ul className="dropdown-menu">
+                <ul className="dropdown-menu m-l--78">
                     <li onClick={()=>this.props.handleSort('name', 'asc')}>
                         <a href="#" role="button">Name ASC</a></li>
                     <li onClick={()=>this.props.handleSort('name', 'desc')}>

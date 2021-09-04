@@ -25,3 +25,46 @@
 .isFlexbox {
     display: flex !important;
 }
+
+@media (max-width: 576px){
+    .hide-on-mobile{
+        display: none;
+    }
+    .m-ml--8{
+        margin-left: -8px;
+    }
+    .dropdown-menu.show.m-l--78{
+        right: 100% !important;
+        left: unset !important;
+        transform: translate3d(74px,34px,0) !important;
+    }
+    .m-mt-16{
+        margin-top: 16px;
+    }
+    .flex-j-b {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .mobile-form-input{
+        width: 70%;
+        margin-right: 2.9%;
+        margin-bottom: 8px;
+    }
+    .mobile-form-select{
+        width: 27.1%;
+        margin-bottom: 8px;
+    }
+    .m-mr-7{
+        margin-right: 7px;
+    }
+    .m-edit-btn{
+        min-width: 56.22px;
+        margin-bottom: 6px;
+    }
+    .m-save-edit-btn{
+        min-width: 57.06px;
+        margin-top: 6px;
+    }
+}

@@ -119,14 +119,14 @@ class App extends Component {
             <div className="container">
                 <Title/>
                 <div className="row">
-                    <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                    <div className="col-xs-9 col-sm-4 col-md-4 col-lg-4">
                         <Search handleSearch={this.handleSearch} searchValue={this.state.searchValue}/>
                     </div>
                     <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3">
                         <Sort sortType={this.state.sortType} sortOder={this.state.sortOder} handleSort={this.handleSort}/>
                     </div>
-                    <div className="col-xs-5 col-sm-5 col-md-5 col-lg-5">
-                        <button type="button" className="btn btn-info btn-block marginB10"
+                    <div className="col-xs-12 col-sm-5 col-md-5 col-lg-5">
+                        <button type="button" className="btn btn-info btn-block marginB10 m-mt-16"
                             onClick={this.handleShowForm}>
                             {(this.state.showForm) ? 'Close form' : 'Add item'}
                         </button>

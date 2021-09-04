@@ -25,7 +25,7 @@ class ItemEdit extends Component {
                     onClick={() => handleCancelEdit()}>
                         Cancel
                     </button>
-                    <button type="button" className="btn btn-success btn-sm"
+                    <button type="button" className="btn btn-success btn-sm m-save-edit-btn"
                     onClick={()=> this.props.handleEditClickSubmit()}>
                         Save
                     </button>

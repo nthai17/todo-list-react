@@ -17,17 +17,17 @@ class Form extends Component {
         if (this.props.showForm === false) return null;
         return(
             <form className="form-inline flex-j-b" onSubmit={()=>this.props.addItem()}>
-                <div className="form-group">
+                <div className="form-group mobile-form-input">
                     <input type="text" className="form-control" placeholder="Item Name" 
                     onChange={(event)=> this.props.handleAddInputChange(event.target.value)}/>
                 </div>
-                <div className="form-group">
+                <div className="form-group mobile-form-select">
                     <select className="form-control"
                     onChange={(event) => this.props.handleAddSelectChange(event.target.value)}>
                         {this.renderLevel()}
                     </select>
                 </div>
-                <button type="button" className="btn btn-primary"
+                <button type="button" className="btn btn-primary m-mr-7"
                 onClick={() => this.props.addItem()}>Submit</button>
                 <button type="button" className="btn btn-default"
                 onClick={() => this.props.handleCloseAddForm()}>Cancel</button>
