@@ -1,0 +1,27 @@
+.marginB10 {margin-bottom: 10px;}
+.marginR5 {margin-right: 5px;}
+.label-medium {
+	padding: 9px 10px;
+    font-size: 14px;
+    font-weight: 500;
+    display: inline-block;
+}
+.mr-7{
+    margin-right: 7px;
+}
+.mr-3{
+    margin-right: 3px;
+}
+.btn:focus-visible, .btn:focus{
+    outline: none !important;
+}
+.flex-j-b {
+    display: flex;
+    justify-content: space-between;
+}
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+    vertical-align: middle;
+}
+.isFlexbox {
+    display: flex !important;
+}

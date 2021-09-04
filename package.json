@@ -5,9 +5,12 @@
   "dependencies": {
     "react": "^16.6.1",
     "react-dom": "^16.6.1",
-    "react-scripts": "^4.0.3"
+    "react-scripts": "^4.0.3",
+    "sweetalert-react": "^0.4.11",
+    "web-vitals": "^1.1.2"
   },
   "scripts": {
+    "start": "react-scripts start",
     "dev": "BROWSER=none react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
