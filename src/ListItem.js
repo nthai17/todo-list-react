@@ -26,9 +26,9 @@ class ListItem extends Component {
         if (items.length === 0){
             return <Item item={0}/>
         }
-        return items.map((item) => {
+        return items.map((item, index) => {
             if (item.id === this.state.idEdit) {
-                return <ItemEdit item={item} 
+                return <ItemEdit key={index} item={item} 
                         index={item.id}
                         nameEdit={this.state.nameEdit}
                         levelItem={this.state.levelEditItem} 
@@ -39,7 +39,7 @@ class ListItem extends Component {
                         />
             }
             return (
-                <Item item={item} index={item.id}
+                <Item item={item} key={index} index={item.id}
                 handleAlert={this.handleAlert} 
                 handleEdit={this.handleEdit} />
             )
